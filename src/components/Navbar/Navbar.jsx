@@ -10,7 +10,7 @@ import { CartContext } from '../../Context/CartContext';
 
 
 const navigation = [
-  { name: 'Home', href: 'home', current: false },
+  { name: 'Home', href: '', current: false },
   { name: 'Cart', href: 'cart', current: false },
   { name: 'Wishlist', href: 'wishlist', current: false },
   { name: 'Products', href: 'products', current: false },
@@ -45,7 +45,7 @@ export default function Navbar() {
     <Disclosure as="nav" className="bg-F8F9FA fixed top-0 left-0 right-0 py-2 scroll z-40" id="nav">
       <div className="bg-F8F9FA lg:mx-24 px-2 sm:px-6 lg:px-8 ">
         <div className="relative flex h-16 items-center justify-between media-footer ">
-          <Link to="home" className='text-4xl font-bold cursor-pointer min-w-36'><img className='min-w-36' src={logo} alt="" /></Link>
+          <Link to="" className='text-4xl font-bold cursor-pointer min-w-36'><img className='min-w-36' src={logo} alt="" /></Link>
           <div className="absolute inset-y-0 flex items-center md:hidden right-2">
 
             {/* Mobile menu button*/}

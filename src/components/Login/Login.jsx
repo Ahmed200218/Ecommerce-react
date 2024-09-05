@@ -26,7 +26,8 @@ async  function login(formvalue) {
         localStorage.setItem("token", data.token)
         tokenContext.setToken(data.token)
 
-        navigate("/home")
+        navigate("/")
+        window.location.reload()
         setisloading(false)
 
       })

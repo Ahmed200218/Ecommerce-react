@@ -7,6 +7,7 @@ import slider1 from "../../assets/images/slider-image-1.jpeg"
 import slider2 from "../../assets/images/slider-image-2.jpeg"
 import slider3 from "../../assets/images/slider-image-3.jpeg"
 import { UserTokencontext } from '../../Context/UserTokenContext';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 
 
@@ -14,6 +15,7 @@ import { UserTokencontext } from '../../Context/UserTokenContext';
 export default function Home() {
   let [categories, setCategories] = useState([])
   let tokenContext = useContext(UserTokencontext)
+  let navigate = useNavigate()
 
 
   var settings = {
@@ -45,8 +47,13 @@ export default function Home() {
  
 
   useEffect(() => {
-    tokenContext.setToken(localStorage.getItem("token"))
-    getCategories()
+    if(localStorage.getItem("token")){
+      tokenContext.setToken(localStorage.getItem("token"))
+      getCategories()
+    }
+    else{
+      navigate("/login")
+    }
 
   }, [])
 

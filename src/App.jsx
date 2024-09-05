@@ -28,9 +28,9 @@ import ForgotPassword from './components/ForgotPassword/ForgotPassword';
 const routes = createBrowserRouter([
   {
     path: "", element: <Layout />, children: [
-      { index: true, element: <Register /> },
+      { path:"register", element: <Register /> },
       { path: "login", element: <Login /> },
-      { path: "home", element: <Home /> },
+      { index: true, element: <Home /> },
       { path: "cart", element: <Cart /> },
       { path: "wishlist", element: <Wishlist /> },
       { path: "products", element: <Products /> },
