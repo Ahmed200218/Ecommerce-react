@@ -48,7 +48,7 @@ let res=await cashOnDelivery(cartId , myform.values )
 localStorage.setItem("count",0)
 setCount(0)
 toast.success("Done")
-navigate("/home")
+navigate("/")
   }
 
   useEffect(() => {setDisabledButton(false) }, [])
