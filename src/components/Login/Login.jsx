@@ -27,7 +27,6 @@ async  function login(formvalue) {
         tokenContext.setToken(data.token)
 
         navigate("/home")
-        window.location.reload();
         setisloading(false)
 
       })
