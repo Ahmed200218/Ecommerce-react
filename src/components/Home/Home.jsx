@@ -43,7 +43,9 @@ export default function Home() {
  
 
   useEffect(() => {
+    tokenContext.setToken(localStorage.getItem("token"))
     getCategories()
+
   }, [])
 
 
