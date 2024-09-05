@@ -1,0 +1,44 @@
+.bg-F8F9FA {
+    background-color: #F8F9FA!important;
+}
+
+.active {
+    color: black !important;
+}
+.scale-200{
+    scale: 1.9;
+}
+.bg-4FA74F{
+    background-color: #4FA74F;
+}
+.border-rounded{
+    border-radius: 4px;
+}
+.color-575757{
+    color: #575757;
+}
+.text-base2{
+    font-size: 1.05rem!important;
+}
+.hover-link:hover{
+    color:rgb(60, 60, 60)
+}
+.hover-link{
+    transition: color 400ms;
+}
+.top-85 {
+    top:330px
+}
+.my--20{
+    margin-top: -30px;
+    margin-bottom: -10px;
+}
+.my-modify{
+    margin-bottom: -25px;
+}
+.mr-100{
+    margin-right: 100px;
+}
+.ml-100{
+    margin-left:100px;
+}

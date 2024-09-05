@@ -1,0 +1,25 @@
+.product{
+    box-shadow: darkgreen;
+    border: 1px solid transparent;
+    transition: box-shadow 400ms;
+}
+.product:hover{
+    box-shadow: 0px 0px 10px 0.1px green;
+}
+.hover-position-child{
+    transform: translateY(200px);
+    transition: transform 500ms;
+}
+.product:hover .hover-position-child{
+    transform: translateY(0px);
+}
+.input-isFocused{
+    transition: box-shadow 200ms;
+}
+.input-isFocused:focus{
+    color: #212529;
+    background-color: white;
+    border-color: #86b7fe !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 0.25rem #0d6efd40 !important;
+}
