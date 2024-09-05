@@ -88,8 +88,8 @@ export default function Navbar() {
             </Link>
             <Link to="login" onClick={logout}><p className='hover-link color-575757'>log out</p></Link>
             </div>:<div className=' justify-center items-center gap-10 hidden md:flex pl-8'> 
-            <Link to="login" ><p className='hover-link color-575757'>log in</p></Link>
-            <Link to="" ><p className='hover-link color-575757'>Register</p></Link>
+            <Link to="/login" ><p className='hover-link color-575757'>log in</p></Link>
+            <Link to="/register" ><p className='hover-link color-575757'>Register</p></Link>
               </div>}
         
         </div>
@@ -122,8 +122,8 @@ export default function Navbar() {
             </Link>
             <Link to="login" onClick={logout} ><p className='hover-link color-575757'>log out</p></Link>
           </div>:<div className=' justify-center items-center gap-7 flex pl-8 flex-col '>
-          <Link to="" ><p className='hover-link color-575757'>Register</p></Link>
-          <Link to="login" ><p className='hover-link color-575757'>log in</p></Link>
+          <Link to="/register" ><p className='hover-link color-575757'>Register</p></Link>
+          <Link to="/login" ><p className='hover-link color-575757'>log in</p></Link>
             </div>}
       </DisclosurePanel>
       
