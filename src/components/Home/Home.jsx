@@ -6,12 +6,14 @@ import axios from 'axios';
 import slider1 from "../../assets/images/slider-image-1.jpeg"
 import slider2 from "../../assets/images/slider-image-2.jpeg"
 import slider3 from "../../assets/images/slider-image-3.jpeg"
+import { UserTokencontext } from '../../Context/UserTokenContext';
 
 
 
 
 export default function Home() {
   let [categories, setCategories] = useState([])
+  let tokenContext = useContext(UserTokencontext)
 
 
   var settings = {
