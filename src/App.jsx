@@ -13,7 +13,6 @@ import Products from './components/Products/Products';
 import Categories from './components/Categories/Categories';
 import Brands from './components/Brands/Brands';
 import Notfound from './components/Notfound/Notfound';
-import ForgotPassword from './components/forgotPassword/forgotPassword';
 import Code from './components/Code/Code';
 import ResetPassword from './components/ResetPassword/ResetPassword';
 import UserTokencontextProvider, { UserTokencontext } from './Context/UserTokenContext';
@@ -22,6 +21,7 @@ import CartContextProvider from './Context/CartContext';
 import { Toaster } from 'react-hot-toast';
 import CheckOut from './components/CheckOut/CheckOut';
 import WishListContextProvider from './Context/WishListContext';
+import ForgotPassword from './components/ForgotPassword/ForgotPassword';
 
 
 
